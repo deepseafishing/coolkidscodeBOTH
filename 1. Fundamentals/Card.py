@@ -11,11 +11,11 @@ class Card:
       self.value = value
 
     # Returns the suit of the card.
-    def suit(self):
+    def get_suit(self):
       return self.suit
 
     # Returns the value of the card.
-    def value(self):
+    def get_value(self):
       return self.value
 
 class Deck:
@@ -61,9 +61,9 @@ class Deck:
         print("Card: {} {}".format(c.suit, c.value))
 
 
-# d = Deck()
-# # d.print_deck()
-# d.shuffle()
+d = Deck()
 # d.print_deck()
-c = Card(SUITS[0], VALUES[0])
-print(c.suit())
+d.shuffle()
+d.print_deck()
+# c = Card(SUITS[0], VALUES[0])
+# print(c.get_suit(), c.get_value())

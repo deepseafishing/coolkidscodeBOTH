@@ -1,4 +1,9 @@
-a = 4
-b = 5
+a = -129
+b = -129
 
-print(a, b)
+# print(type(a))
+# print(a is not b)
+
+c = {"d": 5, "e": 6}
+
+print(len(c))

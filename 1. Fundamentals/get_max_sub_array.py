@@ -26,3 +26,6 @@ def get_max_sub_array(input: List[int], target: int) -> int:
     return max_length
 
 print(get_max_sub_array([-15, -2, 2, -8, 7, 1], 0))
+
+
+# sorted array

@@ -1,3 +1,18 @@
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        if not intervals: return []
+        intervals.sort(key=lambda x: (x[0], x[1]))
+        console.log(f`intervals {intervals}`)
+        prev = intervals[0]
+        ret = [prev]
+        for curr in intervals:
+            if prev[1] >= curr[0]:
+                prev[1] = max(curr[1], )
+            else:
+                ret.push(curr)
+                prev = curr
+
+        return ret
 # def median(arr1, arr2):
 #     totalLength = len(arr1) + len(arr2)
 #     medianCount = totalLength // 2 + 1  # 4th one
